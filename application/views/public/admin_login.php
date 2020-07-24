@@ -1,0 +1,79 @@
+<?php include('public_header.php');?>
+
+<div class="container">
+
+	<?php echo form_open('login/admin_login', ['class'=> 'form-horizontal'] ) ?>
+	<!-- The above line is added to send the user login request to login.php controller -->
+ 
+  <fieldset>
+    <legend><center><h4><b>Admin Login<b></h4></center></legend><br/><br/>
+
+    <div class="jumbotron bg-light">
+
+    <?php if( $error = $this->session->flashdata('login_failed')): ?>
+    
+    <div class="row">
+    <div class="col-lg-6">
+
+      <div class="alert alert-dismissible alert-danger">
+ 
+        <h4 class="alert-heading"></h4>
+        <p class="mb-0"> <?= $error ?> </p>
+      </div>
+
+    </div>
+    </div>
+
+   <?php endif; ?>
+
+
+
+    <div class="row">
+    <div class="col-lg-6">
+    <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>   
+      <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
+      	<!-- Replacing the above line with the below line, it is a form helper that is loaded in controllers/login.php   -->
+    <?php echo form_input(['name'=>'username','class'=>'form-control','placeholder'=>'Username','value'=>set_value('username')]);?>
+    </div>
+    </div>
+    </div>
+    <?php echo form_error('username'); ?>
+   
+    
+
+    <div class="row">
+    <div class="col-lg-6">
+    <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+      <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
+
+      <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
+      	<!-- Replacing the above line with the below line, it is a form helper that is loaded in controllers/login.php   -->
+    <?php echo form_password(['name'=>'password','class'=>'form-control','placeholder'=>'Password']);?>
+    	
+    </div>
+    </div>
+    </div>
+    <?php echo form_error('password'); ?>
+
+ <br/>   		
+    <!-- <div class="form-group">
+      <label for="exampleSelect1">Role</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>Admin</option>
+        <option>Member</<optgroup></optgroup>ion>
+      </select>
+    </div> -->
+    
+
+
+    <button type="reset" class="btn btn-secondary">Reset</button>
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    	<!-- Replacing the above line with the below line, it is a form helper that is loaded in controllers/login.php   -->
+      	<?php echo form_submit(['name'=>'submit','value'=>'Login','class'=>'btn btn-info']);?>
+ </form>
+ </fieldset>
+</div>	
+
+	<?php include('public_footer.php');?>
