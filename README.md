@@ -1,0 +1,6 @@
+TASK MANAGEMENT SYSTEM
+
+CREATED BY ER. FARAAZ ELECTRICWALA
+
+Language : PHP
+Framework : CodeIgniter
