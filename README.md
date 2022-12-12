@@ -1,7 +1,7 @@
 # TASK MANAGEMENT SYSTEM
 
-Language : PHP
-Framework : CodeIgniter
+1. Language : PHP
+2. Framework : CodeIgniter
 Frontend Framework : Bootstrap
 Database: MySQL
 
