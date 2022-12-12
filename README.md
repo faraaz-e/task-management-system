@@ -2,8 +2,8 @@
 
 1. Language : PHP
 2. Framework : CodeIgniter
-Frontend Framework : Bootstrap
-Database: MySQL
+3. Frontend Framework : Bootstrap
+4. Database: MySQL
 
 ## Installation
 
