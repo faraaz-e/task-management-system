@@ -2,6 +2,7 @@
 
 Language : PHP
 Framework : CodeIgniter
+Frontend Framework : Bootstrap
 Database: MySQL
 
 ## Installation
