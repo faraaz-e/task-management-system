@@ -122,7 +122,7 @@ class Admin extends MY_Controller{
 			);
 		}
 		else{
-			$this->load->view('admin/add_article', /* compact('upload_error') */);
+			$this->load->view('admin/add_article');
 		}
 	}
 
@@ -146,7 +146,7 @@ class Admin extends MY_Controller{
 	 	$this->load->library('form_validation');
 		$this->form_validation->set_error_delimiters("<p class='text-danger'>","</p>");
 
-		if( $this->form_validation->run('add_article_rules') /* && $this->upload->do_upload() */ ){
+		if( $this->form_validation->run('add_article_rules') ){
 
 				$post = $this->input->post();
 				unset($post['submit']);
