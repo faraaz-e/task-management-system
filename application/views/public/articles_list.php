@@ -28,12 +28,7 @@
       <td><?= ucfirst($article->type) ?></td>
       <td><?= anchor("user/article/{$article->id}",ucfirst($article->title)) ?></td>
       <td><?= ucfirst($article->pname) ?></td>
-      <!-- <td><?= date('d M y H:i:s', strtotime($article->created_at) ) ?></td> -->
-      <td><?= date('d-m-Y', strtotime($article->created_at) ) ?></td>
-      <!-- Can also be displayed like below line -->
-      <!-- <td><?= $article->created_at  ?></td> -->
-      
-          
+      <td><?= date('d-m-Y', strtotime($article->created_at) ) ?></td>  
       <td><?= date('d-m-Y', strtotime($article->enddate) ) ?></td>
 
 
