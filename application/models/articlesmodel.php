@@ -49,9 +49,6 @@ class Articlesmodel extends CI_Model {
       			return $query->num_rows();
 	}
 
-	//The above function num_rows() is for Pagination
-
-
 	public function add_article($array)
 	{
 		return $this->db->insert ( 'articles', $array );
