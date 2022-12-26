@@ -128,16 +128,4 @@ class Articlesmodel extends CI_Model {
 			return false;
 	}
 
-
-
-
-	// public function file_download($article_id)
-	// {
-	// 	$query = $this->db->select('file_path')
-	// 				  ->from('articles')
-	// 				  ->where('id',$article_id)
-	// 				  ->get();
-	// 		return $query->result();
-	// }	
-
 }
