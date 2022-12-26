@@ -119,8 +119,6 @@
   	<?php if( count($articles) ): 
   		$count = $this->uri->segment(3, 0);
   	 foreach( $articles as $article ): ?>
-  	
-   <!-- In the above lines " colons : " are used instead of " curly braces {} ", for having visiblity of Start and end of code --> 
 
     <tr class="table-default">
       <td> <?= ++$count ?></td>
@@ -206,14 +204,8 @@
 
 	      	
 	      </div>
-
-      	      <!-- <button type="button" class="btn btn-danger">Delete</button> -->
       
       </td>
-  
-
-
-
 
   </tr>
 
@@ -229,44 +221,11 @@
     	</tr>
 
     <?php endif; ?>
-    <!-- the above lines are ending of the code, used instead of curly braces as stated above -->
 
   </tbody>
 </table> 
 
-
 <?= $this->pagination->create_links(); ?>
-
-
-
-<!-- <div>
-  <ul class="pagination">
-  	<li class="page-item">
-      <a class="page-link" href="#">&laquo;</a>
-    </li>
-    <li class="page-item active">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">3</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">4</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">5</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">&raquo;</a>
-    </li>
-  </ul>
-</div> -->
-
-
-
 
 </div>
 
