@@ -129,24 +129,7 @@
 	</span>
 </p><br/><hr>
 
-<!--
-<p><h5>Uploaded Files :</h5><br/> -->
-
-
-<!-- <?php if ( ! is_null($article->file_path ) ) : ?> -->
-<!-- <img src="<?= $article->file_path ?>" alt=""> -->
-<!--The above will display image, and below line will display name -->
-<!-- <?= $article->file_path ?>  -->
 <br/><br/>
-
- <!-- <?php echo form_submit(['name'=>'submit','value'=>'Download Files','class'=>'btn btn-success']);?>  -->
-
-
-<!--	<?= anchor("user/file_download/{$article->id}",'Download Files',['class'=>'btn btn-success']); ?> -->
-
-	
-
-
 
 
   <?php else: ?>
