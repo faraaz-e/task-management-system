@@ -3,13 +3,8 @@
 <div class="jumbotron">
 <div class="container">
 	<?php echo form_open_multipart("admin/update_article/{$article->id}", ['class'=> 'form-horizontal'] ) ?>
-	<!-- The above line is added to send the user login request to admin.php controller -->
 
   <?php echo form_hidden('user_id', $this->load->session->userdata('user_id')); ?>
-  <!-- <?php echo form_hidden('created_at', date('Y-m-d H:i:s')) ?> -->
-
-
-
  
   <fieldset>
     <legend><center><h3>Edit Task</h3></center></legend><br/> 
@@ -32,8 +27,6 @@
     <div class="col-lg-6">
     <div class="form-group">
     <label for="exampleInputEmail1">Task Title</label>   
-      <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
-      	<!-- Replacing the above line with the below line, it is a form helper that is loaded in controllers/login.php   -->
     <?php echo form_input(['name'=>'title','class'=>'form-control', 'placeholder'=>'Enter Title','value'=>set_value('title',$article->title)]);?>
     </div>
     </div>
@@ -74,8 +67,6 @@
     <div class="form-group">
     <label for="exampleInputEmail1">Task End Date</label>  
     <?php echo form_input(['name'=>'enddate','class'=>'form-control', 'placeholder'=>'Click to add Task Deadline', 'id'=>'example1', 'value'=>set_value('enddate', $article->enddate)]);?>
-
-        <!-- <input  class="form-control" type="text" placeholder="Click to add Deadline" id="example1"> -->
         <script type="text/javascript">
                 $(document).ready(function () {               
                 $('#example1').datepicker({
@@ -89,32 +80,12 @@
     </div>
     </div>  
     </div>
-
-
-
-
-
-<!--
-    <div class="row">
-    <div class="col-lg-6">
-    <div class="form-group">
-    <label for="exampleInputFile">File Upload</label>   
-    <?php echo form_upload(['name'=>'userfile','class'=>'form-control-file']);?>
-    </div>
-    </div>
-    </div>
-    <?php  if(isset($upload_error)) echo $upload_error ?> -->   
+ 
     <br/>
     
     		
     </fieldset>
-
-
-
-
-    <!-- <button type="reset" class="btn btn-secondary">Reset</button> -->
-    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-    	<!-- Replacing the above line with the below line, it is a form helper that is loaded in controllers/login.php   -->
+	
       	<?php echo form_submit(['name'=>'submit','value'=>'Update Task','class'=>'btn btn-info']);?>
  </form>
 </div>	
