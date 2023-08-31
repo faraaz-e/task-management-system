@@ -7,7 +7,7 @@
 
 ### Installation
 
-1. Install [Xampp](https://www.apachefriends.org/download.html) and START APACHE & MYSQL in xampp control panel.
+1. Install [Xampp](https://www.apachefriends.org/download.html) and Start _Apache_ & _MySQL_ in Xampp control panel.
 2. Paste **tms** folder (project folder) to path :  
    _xampp / htdocs /_
 3. Create new database and name it as **tms** & import **tms.sql** file. 
